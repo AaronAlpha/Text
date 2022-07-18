@@ -29,10 +29,10 @@ rect(titleX, titleY, titleWidth, titleHeight);
 fill(purple); //ink, hexadecimal copied from Color Selector
 
 //graphical rep stuff:
-textAllign(CENTER, ); //Align X*Y, see  Processing.org/Reference
+textAlign(CENTER, CENTER); //Align X*Y, see  Processing.org/Reference
 //the above has 2 parameters -> 'x-alignment' and 'y-alignment'
-//'textAllign' has 3 values for the 'x-alignment' -> [ LEFT | CENTER | RIGHT ]
-//'textAllign has 4 values for the for the 'y-alignment' -> [ TOP | CENTER | BOTTOM | BASELINE] ('BASELINE' is the very very below of page )
+//'textAlign' has 3 values for the 'x-alignment' -> [ LEFT | CENTER | RIGHT ]
+//'textAlign has 4 values for the for the 'y-alignment' -> [ TOP | CENTER | BOTTOM | BASELINE] ('BASELINE' is the very very below of page )
 
 text(title, titleX, titleY, titleWidth, titleHeight); //'text()' function 'draws' the text 
 fill(resetDefaultInk);
