@@ -3,6 +3,7 @@ float titleX, titleY, titleWidth, titleHeight;
 PFont titleFont;
 color purple = #9E05FF, resetDefaultInk = #FFFFFF; //or another purple  color = #2c08ff
 //the 'resetDefaultInk' is not NightMode friendly as its just white 
+int titleSize;
 
 //
 size(500, 600); //Portrait mode
@@ -33,6 +34,9 @@ textAlign(CENTER, CENTER); //Align X*Y, see  Processing.org/Reference
 //the above has 2 parameters -> 'x-alignment' and 'y-alignment'
 //'textAlign' has 3 values for the 'x-alignment' -> [ LEFT | CENTER | RIGHT ]
 //'textAlign has 4 values for the for the 'y-alignment' -> [ TOP | CENTER | BOTTOM | BASELINE] ('BASELINE' is the very very below of page )
+
+titleSize = 50; //Changing number until it exists
+textFont(titleFont, titleSize); //used to affext the text
 
 text(title, titleX, titleY, titleWidth, titleHeight); //'text()' function 'draws' the text 
 fill(resetDefaultInk);
